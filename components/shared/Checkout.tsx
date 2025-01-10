@@ -45,7 +45,7 @@ const Checkout = ({
         className: "error-toast",
       });
     }
-  }, []);
+  }, [toast]); // Added toast to the dependency array
 
   const onCheckout = async () => {
     const transaction = {
